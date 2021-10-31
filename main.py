@@ -10,4 +10,7 @@ def show_url0():
     data = BeautifulSoup(text, 'html.parser')
     # print(url0)
 
+    # first row of table (tr) = top row
+    headings = data.find_all('tr')[0]
+
 show_url0()
