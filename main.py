@@ -31,12 +31,12 @@ data = BeautifulSoup(text, 'html.parser')
 # print(url0)
 
 # first row of table (tr) = top row
-headings = data.find_all('tr')[0]
+headings = data.find_all('tr')#[0]
 headings_list = [] # list to store all headings
 
 # get set amount of columns
 headings_list = headings_list[:10]
 
 print('Headings are: ')
-    for column in headings_list:
+for column in headings_list:
     print(column)
