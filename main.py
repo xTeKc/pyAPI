@@ -17,4 +17,8 @@ def show_url0():
     # get set amount of columns
     headings_list = headings_list[:10]
 
+    print('Headings are: ')
+    for column in headings_list:
+        print(column)
+
 show_url0()
