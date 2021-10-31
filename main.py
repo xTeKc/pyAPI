@@ -6,3 +6,5 @@ from decouple import config
 def show_url0():
     url0 = config('URL0')
     print(url0)
+
+show_url0()
