@@ -1,6 +1,5 @@
-import requests 
-from bs4 import BeautifulSoup
 import time
-import datetime
+from selenium import webdriver
+from datetime import datetime
 from decouple import config
 
