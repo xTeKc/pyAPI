@@ -12,5 +12,6 @@ def show_url0():
 
     # first row of table (tr) = top row
     headings = data.find_all('tr')[0]
+    headings_list = [] # list to store all headings
 
 show_url0()
