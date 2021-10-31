@@ -1,8 +1,8 @@
-import requests 
-from bs4 import BeautifulSoup
-import time
-import datetime
-from decouple import config
+# import requests 
+# from bs4 import BeautifulSoup
+# import time
+# import datetime
+# from decouple import config
 
 # def show_url0():
 #     url0 = config('URL0')
@@ -34,36 +34,36 @@ from decouple import config
 
 # show_url0()
 
-while(True):
-    now = datetime.datetime.now()
+# while(True):
+#     now = datetime.datetime.now()
       
-    # this is just to get the time at the time of
-    # web scraping
-    current_time = now.strftime("%H:%M:%S")
-    print(f'At time : {current_time} IST')
+#     # this is just to get the time at the time of
+#     # web scraping
+#     current_time = now.strftime("%H:%M:%S")
+#     print(f'At time : {current_time} IST')
   
-    url0 = config('URL0')
-    response = requests.get(url0)
-    text = response.text
-    html_data = BeautifulSoup(text, 'html.parser')
-    headings = html_data.find_all('tr')[0]
-    headings_list = []
-    for x in headings:
-        headings_list.append(x.text)
-    headings_list = headings_list[:10]
+#     url0 = config('URL0')
+#     response = requests.get(url0)
+#     text = response.text
+#     html_data = BeautifulSoup(text, 'html.parser')
+#     headings = html_data.find_all('tr')[0]
+#     headings_list = []
+#     for x in headings:
+#         headings_list.append(x.text)
+#     headings_list = headings_list[:10]
   
-    data = []
+#     data = []
   
-    for x in range(1, 6):
-        row = html_data.find_all('tr')[x]
-        column_value = row.find_all('td')
-        dict = {}
+#     for x in range(1, 6):
+#         row = html_data.find_all('tr')[x]
+#         column_value = row.find_all('td')
+#         dict = {}
           
-        for i in range(10):
-            dict[headings_list[i]] = column_value[i].text
-        data.append(dict)
+#         for i in range(10):
+#             dict[headings_list[i]] = column_value[i].text
+#         data.append(dict)
           
-    for coin in data:
-        print(coin)
-        print('')
-    time.sleep(600)
+#     for coin in data:
+#         print(coin)
+#         print('')
+#     time.sleep(600)
