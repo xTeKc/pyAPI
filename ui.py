@@ -18,6 +18,9 @@ def main():
     
     button = QPushButton("PUSH")
 
+    layout.addWidget(label)
+    layout.addWidget(button)
+
     window.show()
     app.exec_()
 
