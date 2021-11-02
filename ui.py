@@ -19,7 +19,7 @@ def main():
     textbox = QTextEdit()
     
     button = QPushButton("PUSH")
-    button.clicked.connect(lambda: on_click())
+    button.clicked.connect(lambda: on_click(textbox.toPlainText))
 
     layout.addWidget(label)
     layout.addWidget(textbox)
