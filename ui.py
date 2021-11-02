@@ -20,6 +20,8 @@ def main():
 
     layout.addWidget(label)
     layout.addWidget(button)
+    
+    window.setLayout(layout)
 
     window.show()
     app.exec_()
