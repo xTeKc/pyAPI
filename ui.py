@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import *
+from PyQt5.QtGui import QFont
 
 def main():
     app = QApplication([])
@@ -6,6 +7,7 @@ def main():
 
     label = QLabel(window)
     label.setText("Window Label")
+    label.setFont()
 
     window.show()
     app.exec_()
