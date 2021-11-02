@@ -7,7 +7,7 @@ def main():
 
     label = QLabel(window)
     label.setText("Window Label")
-    label.setFont()
+    label.setFont(QFont("Arial", 15))
 
     window.show()
     app.exec_()
