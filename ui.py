@@ -12,6 +12,10 @@ def main():
     # label.setFont(QFont("Arial", 15))
     # label.move(100, 50)
 
+    layout = QVBoxLayout()
+
+    
+
     window.show()
     app.exec_()
 
