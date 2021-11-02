@@ -16,6 +16,7 @@ def main():
 
     label = QLabel("Push Button")
     
+    button = QPushButton("PUSH")
 
     window.show()
     app.exec_()
