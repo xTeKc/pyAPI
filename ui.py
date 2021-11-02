@@ -7,10 +7,10 @@ def main():
     window.setWindowTitle("Window Title")
     window.setGeometry(1000, 1000, 1000, 1000)
 
-    label = QLabel(window)
-    label.setText("Window Label")
-    label.setFont(QFont("Arial", 15))
-    label.move(50, 100)
+    # label = QLabel(window)
+    # label.setText("Window Label")
+    # label.setFont(QFont("Arial", 15))
+    # label.move(100, 50)
 
     window.show()
     app.exec_()
