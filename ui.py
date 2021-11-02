@@ -4,6 +4,7 @@ from PyQt5.QtGui import QFont
 def main():
     app = QApplication([])
     window = QWidget()
+    window.setWindowTitle("Window Title")
     window.setGeometry(100, 100, 200, 300)
 
     label = QLabel(window)
