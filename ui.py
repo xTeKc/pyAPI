@@ -3,6 +3,10 @@ from PyQt5.QtWidgets import *
 def main():
     app = QApplication([])
     window = QWidget()
+
+    label = QLabel(window)
+    label.setText("Window Label")
+
     window.show()
     app.exec_()
 
