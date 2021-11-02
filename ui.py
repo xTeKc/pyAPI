@@ -5,7 +5,7 @@ def main():
     app = QApplication([])
     window = QWidget()
     window.setWindowTitle("Window Title")
-    window.setGeometry(100, 100, 200, 300)
+    window.setGeometry(1000, 1000, 1000, 1000)
 
     label = QLabel(window)
     label.setText("Window Label")
