@@ -30,10 +30,10 @@ def main():
     window.show()
     app.exec_()
 
-def on_click():
+def on_click(msg):
     # print("Hello")
     message = QMessageBox()
-    message.setText("Hello")
+    message.setText(msg)
     message.exec_()
 
 if __name__ == '__main__':
