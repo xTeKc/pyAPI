@@ -28,7 +28,10 @@ def main():
     app.exec_()
 
 def on_click():
-    print("Hello")
+    # print("Hello")
+    message = QMessageBox()
+    message.setText("Hello")
+    message.exec_()
 
 if __name__ == '__main__':
     main()
