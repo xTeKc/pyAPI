@@ -17,6 +17,7 @@ def main():
     label = QLabel("Push Button")
     
     button = QPushButton("PUSH")
+    button.clicked.connect(on_click)
 
     layout.addWidget(label)
     layout.addWidget(button)
@@ -25,6 +26,9 @@ def main():
 
     window.show()
     app.exec_()
+
+def on_click():
+    print("Hello")
 
 if __name__ == '__main__':
     main()
