@@ -14,6 +14,7 @@ def main():
 
     layout = QVBoxLayout()
 
+    label = QLabel("Push Button")
     
 
     window.show()
