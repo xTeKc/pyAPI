@@ -8,7 +8,7 @@
 
 ## Todo:
 # ------
-# [  ]create gui
+# [ X ]create gui
 # [  ]import other python files
 # [  ]create api or use existing api from webpage
 # [  ]recognize keywords and key images?
