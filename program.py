@@ -1,6 +1,9 @@
 #Simple assignment
 from selenium.webdriver import Firefox
 from decouple import config
+import sys
+
+Firefox(executable_path=".geckodriver")
 
 driver = Firefox()
 #Or use the context manager
