@@ -8,3 +8,11 @@ import pandas as pd
 
 def get_data(data, start, end, export_csv=False):
     frames = []
+    
+    for d in data:
+        my_url = f""
+        option = Options()
+        option.headless = False
+        driver = webdriver.Chrome(options=option)
+        driver.get(my_url)
+        driver.maximize_window()
