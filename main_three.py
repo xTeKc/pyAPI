@@ -10,7 +10,7 @@ from decouple import config
 def get_data(data, start, end, export_csv=False):
     frames = []
     
-    in_stock_url = config("IN_STOCK_URL")
+    in_stock_url = config("IN_STOCK_URL") # IN_STOCK_URL imported from .env
 
     for d in data:
         the_url = in_stock_url
