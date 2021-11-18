@@ -13,7 +13,7 @@ def get_data(data, start, end, export_csv=False):
     in_stock_url = config("IN_STOCK_URL")
 
     for d in data:
-        my_url = f""
+        the_url = in_stock_url
         option = Options()
         option.headless = False
         driver = webdriver.Chrome(options=option)
