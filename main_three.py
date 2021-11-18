@@ -10,6 +10,8 @@ from decouple import config
 def get_data(data, start, end, export_csv=False):
     frames = []
     
+    in_stock_url = config("IN_STOCK_URL")
+
     for d in data:
         my_url = f""
         option = Options()
