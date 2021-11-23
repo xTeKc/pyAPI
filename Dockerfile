@@ -1,3 +1,5 @@
+FROM windows
+FROM macos
 
 
 FROM python:3
