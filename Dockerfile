@@ -2,4 +2,5 @@
 
 FROM python:3
 
-ADD 
+ADD main.py /
+
