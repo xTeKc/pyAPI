@@ -3,7 +3,7 @@ FROM macos
 
 ADD requirements.txt
 
-
+RUN pip install -r requirements.txt
 
 FROM python:3
 
