@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# misc2
+geckodriver.log
+pip-selfcheck.json
+venv
+.idea
+.env
