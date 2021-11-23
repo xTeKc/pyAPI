@@ -1,6 +1,9 @@
 FROM windows
 FROM macos
 
+ADD requirements.txt
+
+
 
 FROM python:3
 
