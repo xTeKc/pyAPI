@@ -11,10 +11,6 @@ class Item(BaseModel):
 
 app = FastAPI()
 
-@app.get("/users/me")
-async def read_user(user_id: str):
-    return {"user_id": user_id}
-
-@app.get("/users/{user_id}")
-async def read_user(user_id: str):
-    return {"user_id": user_id}
+@app.get("/items")
+async def create_item(item: Item):
+    return item
